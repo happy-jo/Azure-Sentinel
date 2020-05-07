@@ -441,37 +441,7 @@
                         }
                     },
                     "extensionProfile": {
-                        "extensions": [
-                            {
-                                "type": "extensions",
-                                "name": "OMSExtension",
-                                "location": "[resourceGroup().location]",
-                                "properties": {
-                                    "publisher": "Microsoft.EnterpriseCloud.Monitoring",
-                                    "type": "OmsAgentForLinux",
-                                    "typeHandlerVersion": "1.4",
-                                    "autoUpgradeMinorVersion": true,
-                                    "settings": {
-                                        "workspaceId": "[parameters('workspaceId')]",
-                                        "stopOnMultipleConnections": "true"
-                                    },
-                                    "protectedSettings": {
-                                        "workspaceKey": "[parameters('workspaceKey')]"
-                                    }
-                                }
-                            },
-                            {
-                                "type": "extensions",
-                                "name": "DependencyAgentLinux",
-                                "location": "[resourceGroup().location]",
-                                "properties": {
-                                    "publisher": "Microsoft.Azure.Monitoring.DependencyAgent",
-                                    "type": "DependencyAgentLinux",
-                                    "typeHandlerVersion": "9.5",
-                                    "autoUpgradeMinorVersion": true
-                                }
-                            }
-                        ]
+                        "extensions": []
                     },
                     "priority": "Regular"
                 },
